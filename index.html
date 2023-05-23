@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart Gram-panchayat</title>
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="icon" href="img/icon.jpeg" type="image/icon type">
+</head>
+
+<body style="background-image: url('./img/background.jpeg'); background-repeat: no-repeat; background-size: cover;">
+	<img class="icon" src="img/icon.jpeg">
+	<header>
+		<h1 style="color: #ff8b07;">Smart Gram-panchayat</h1>
+	</header>
+
+	<div class="details">
+		<h3><u>About</u></h3><br>
+		<h4>A Panchayat is a village level institution in India that has been vested with the authority to impose taxes. It consists of a group of five or more representatives, who are responsible for the governance of the village. The panchayat is empowerd to collect taxes on land and property, as well as on professional and commercial activities within the village.</h4><br>
+		<h4>The purpose of a panchayat is to provide basic services to villages such as water, sanitation, roads and primary health.The panchayat also imposes taxes on villagers to raise funds for these services.</h4><br>
+		<h4>This website helps the user to know all the information about the various taxes of the gram panchayat. For this the user have to register initially and then they can login into the website to pay and to know the status of different taxes.</h4>
+	</div>
+	<!--container div -->
+	<div class="container" style="right: -30%;">
+
+		<!-- upper button section to select
+			the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		<!-- Form section that contains the
+			login and the signup form -->
+		<div class="form-section">
+
+			<!-- login form -->
+			<form class="login-box" method="post" action="./php/loginvalidation.php">
+				<input type="text" name="aadhar_no" class="email ele" placeholder="aadhar number">
+				<input type="password" name="passwd" class="password ele" placeholder="password">
+				<input type="submit" class="clkbtn" value="Login">
+			</form>
+
+			<!-- signup form -->
+			<form class="signup-box" method="post" action="./php/dbuserdetails.php">
+				<input type="text" name="name" class="name ele" placeholder="Enter your full name" >
+				<input type="text" name="aadhar_no" class="email ele" placeholder="aadhar number">
+				<input type="text" name="phone_no" class="email ele" placeholder="phone number">
+				<input type="password" name="passwd" class="password ele" placeholder="password">
+				<input type="submit"  class="clkbtn" value="Signup">
+			</form>
+		</div>
+	</div>
+	<script src="Script/index.js"></script>
+</body>
+
+</html>
